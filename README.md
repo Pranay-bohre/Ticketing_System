@@ -129,7 +129,15 @@ This project is open-sourced under the MIT License. See the [LICENSE](LICENSE) f
 
 ---
 ```
-![Screenshot (174)](https://github.com/user-attachments/assets/f439bd25-be8b-4faa-b028-768d5bceaf42)
-![Screenshot (175)](https://github.com/user-attachments/assets/9011da2e-25b1-40ab-af5b-2cd94c6370a2)
-![Screenshot (176)](https://github.com/user-attachments/assets/aed20878-4b6a-4349-8118-e6e9300e84a7)
-![Screenshot (177)](https://github.com/user-attachments/assets/d52aca0a-acbf-436b-8d86-621ff6ead0e2)
+### 🖥 Book Ticket Page
+![Book Ticket](assets/screenshot-174.png)
+
+### 📄 View Tickets Page
+![View Tickets](assets/screenshot-175.png)
+
+### ✅ Booking Success Page
+![Booking Success](assets/screenshot-176.png)
+
+### 📋 View All Tickets Page
+![All Tickets](assets/screenshot-177.png)
+
