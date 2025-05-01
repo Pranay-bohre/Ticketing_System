@@ -33,6 +33,7 @@ public class TicketServiceImpl implements TicketService{
 	@Override
 	public List<List<String>> viewTickets(String userId) {
 		List<Ticket> tickets = ticketDao.fetch(userId);
+		System.out.println(tickets);
 		
 		List<List<String>> ticketList = new ArrayList<>();
 		
@@ -43,6 +44,8 @@ public class TicketServiceImpl implements TicketService{
 			singleTicket.add(ticket.getBookingDate());
 			ticketList.add(singleTicket);
 		}
+		
+		System.out.println(ticketList);
 		
 		return ticketList;
 	}

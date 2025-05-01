@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,23 +77,22 @@
     <div class="container">
         <h2>Your Booked Tickets</h2>
 
-        <!-- Sample ticket entries (You will dynamically loop these) -->
-        <div class="ticket">
-            <p><strong>From:</strong> Indore</p>
-            <p><strong>To:</strong> Bhopal</p>
-            <p><strong>Date:</strong> 2025-04-30</p>
-        </div>
+        <c:choose>
+        <c:when test="${empty tickets}">
+            <div class="no-tickets">You haven't booked any tickets yet.</div>
+        </c:when>
+        <c:otherwise>
+            <c:forEach var="ticket" items="${tickets}">
+                <div class="ticket">
+                    <p><strong>From:</strong> ${ticket[0]}</p>
+                    <p><strong>To:</strong> ${ticket[1]}</p>
+                    <p><strong>Date:</strong> ${ticket[2]}</p>
+                </div>
+            </c:forEach>
+        </c:otherwise>
+    </c:choose>
 
-        <div class="ticket">
-            <p><strong>From:</strong> Delhi</p>
-            <p><strong>To:</strong> Jaipur</p>
-            <p><strong>Date:</strong> 2025-05-01</p>
-        </div>
-
-        <!-- No tickets message -->
-        <!-- <div class="no-tickets">You haven't booked any tickets yet.</div> -->
-
-        <!-- Pagination buttons -->
+        <!-- Optional Pagination -->
         <div class="pagination">
             <a href="#">Previous</a>
             <a href="#">Next</a>

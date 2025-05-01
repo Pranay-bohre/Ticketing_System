@@ -23,7 +23,16 @@ public class TicketDaoImpl implements TicketDao{
 	@Override
 	public List<Ticket> fetch(String userId) {
 		// TODO Auto-generated method stub
-		return null;
+		String query = "Select * from ticketing_ticket_table where userId = (?)";
+		return jdbcTemplate.query(query, (rs, rowNum) -> {
+	        Ticket ticket = new Ticket();
+	        ticket.setTicketId(rs.getString("ticketId"));
+	        ticket.setSource(rs.getString("source"));
+	        ticket.setDestination(rs.getString("destination"));
+	        ticket.setBookingDate(rs.getString("bookingDate"));
+	        ticket.setUserId(rs.getString("userId"));
+	        return ticket;
+	    }, userId);
 	}
 
 }
