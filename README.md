@@ -130,14 +130,14 @@ This project is open-sourced under the MIT License. See the [LICENSE](LICENSE) f
 ---
 ```
 ### 🖥 Book Ticket Page
-![Book Ticket](assets/screenshot-174.png)
+![Book Ticket](assets/book.png)
 
 ### 📄 View Tickets Page
-![View Tickets](assets/screenshot-175.png)
+![View Tickets](assets/default.png)
 
 ### ✅ Booking Success Page
-![Booking Success](assets/screenshot-176.png)
+![Booking Success](assets/home.png)
 
 ### 📋 View All Tickets Page
-![All Tickets](assets/screenshot-177.png)
+![All Tickets](assets/tickets.png)
 
