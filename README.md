@@ -130,7 +130,7 @@ This project is open-sourced under the MIT License. See the [LICENSE](LICENSE) f
 ---
 ```
 ### 🖥 Book Ticket Page
-![Book Ticket](./assets/book.png)
+![Book Ticket]([./assets/book.png])
 
 ### 📄 View Tickets Page
 ![View Tickets](./assets/default.png)
